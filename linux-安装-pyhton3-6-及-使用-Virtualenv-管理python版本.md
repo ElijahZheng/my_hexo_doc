@@ -34,9 +34,10 @@ aptitude -y install gcc make zlib1g-dev
  wget https://cdn.zhengxiangling.com/Python-3.6.2.tar.xz
  tar xJf Python-3.6.2.tar.xz
  cd Python-3.6.2
- ./configure
+ ./configure --with-ssl
  make && make altinstall
 ```
+``--with-ssl`` 是为了给 python3 增加 ssl模块
 
 4.查看python3的版本
 
