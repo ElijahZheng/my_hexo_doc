@@ -93,6 +93,7 @@ hexo server
 
 1)install
 ```bash
+cnpm install --save bcrypt-nodejs
 cnpm install --save hexo-admin
 ```
 2)创建admin的密码

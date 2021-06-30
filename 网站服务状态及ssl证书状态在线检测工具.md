@@ -31,7 +31,8 @@ python3 node-8.9.1
 数据库：``mongo``
 
 ##### http检测状态实现原理
-通过 python ``requests`` 库
+通过 python ``requests`` 库。
+
 ```python
 import requests
 
@@ -52,6 +53,7 @@ except Exception as e:
 
 ##### https 检测状态及ssl证书状态测试实现原理
 运用 ``socket`` 库建立连接，``ssl``库获取ssl证书的公钥，在通过``openssl``的``crypto``通过公钥解密获取ssl证书里的信息。
+
 ```python
 import ssl
 import socket
